@@ -1,0 +1,48 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 20,
+  "spacing": 4,
+  // Modules
+  "modules-left": [
+    // workspaces
+    // current window
+    "clock"
+  ],
+  "modules-center": [
+    // currently playing
+    "clock"
+  ],
+  "modules-right": [
+    // battery
+    "battery",
+    // internet connection
+    // bluetooth
+    // volume statu
+    // cpu temp (expands to system temps)
+    /* control panel
+        local weather
+        computer metrics?
+        wifi controls
+        volume controls
+        power menu
+        bluetooth controls
+
+    */
+    // time
+    "clock"
+    // notifications
+  ],
+
+  // module config
+  "clock": {
+    "format-alt": "{:%a, %d. %b %H:%M}"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  }
+  
+  
+}
