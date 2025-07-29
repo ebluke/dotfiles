@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+
+[Action]
+Description = Updating applist.txt with new package list
+When = PostTransaction
+Exec = /usr/bin/bash -c 'pacman -Qeq > /home/ebluke/dotfiles/applist.txt'

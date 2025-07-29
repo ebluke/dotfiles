@@ -24,6 +24,8 @@ shopt -u dotglob
 
 echo "==> Linking config files..."
 mkdir -p "$HOME/.config"
+
+shopt -s nullglob
 for file in "$DOTFILES/config"/*; do
     base="$(basename "$file")"
     target="$HOME/.config/$base"
@@ -36,6 +38,7 @@ for file in "$DOTFILES/config"/*; do
     echo "Linking $file -> $target"
     ln -s "$file" "$target"
 done
+shopt -u nullglob
 
 echo "==> Installing packages..."
 
@@ -72,6 +75,9 @@ if [ ${#AUR_PKGS[@]} -gt 0 ]; then
     echo "Installing AUR packages: ${AUR_PKGS[*]}"
     yay -S --needed "${AUR_PKGS[@]}"
 fi
+
+echo "==> Setting up pacman hook symlink for applist.txt"
+sudo ln -sf "$DOTFILES/update-applist.hook" /etc/pacman.d/hooks/update-applist.hook
 
 echo "==> Done!"
 
