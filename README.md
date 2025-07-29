@@ -4,42 +4,46 @@ Welcome to my dotfiles brotha, do not copy anything unless you want a bricked sy
 The goal of this file is to help me track what software I'm using for what tasks.
 
 ## Tools
+### Window Manager Related
 
-### Operating System
+#### Operating System
 > Linux
-
-### Distribution
+#### Distribution
 > Arch Linux (btw)
-
-### Compositor / Window Manager
+#### Compositor / Window Manager
 > Wayland w/ Hyprland
-
-### Notifications
-> dunst
-
-### Bar
-> waybar
-
-### Music Player
-> spotify -->  want to move to offline player
-
-### Wallpaper
-> waypaper
-
-### Lock Screen
-> hyprlock
-
-### Editor
-> vim / vscode --> moving to nvim
-
-### browser
-> firefox
-
-### Terminal Emulator
+#### Terminal Emulator
 > Kitty --> wanting to use wezterm?
-
 ### Shell
 > zsh + OhMyZsh + P10K
-
-### GTK QT Theme
+#### Notifications
+> dunst
+#### Bar
+> waybar
+#### GTK QT Theme
 > Catppuccin Mocha
+#### Wallpaper
+> waypaper
+#### Lock Screen
+> hyprlock
+
+### Development Related
+#### Editor
+> vim / vscode --> moving to nvim
+
+### Misc
+#### Music Player
+> spotify -->  want to move to offline player
+#### browser
+> firefox
+
+
+
+
+
+
+
+
+
+
+
